@@ -2,8 +2,8 @@ const cloudinary = require('cloudinary')
 
 cloudinary.config({
     cloud_name : 'bencod',
-    api_key : '931798593994766',
-    api_secret: 'Ju_QTccw-DJusx6YE-L9M1Myp6k'
+    api_key :  process.env.API_KEY,
+    api_secret: process.env.API_SECRET
 })
 
 exports.uploads = (file) =>{
